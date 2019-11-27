@@ -6,7 +6,8 @@ import org.springframework.context.annotation.ComponentScan;
 import org.springframework.context.annotation.Configuration;
 
 @Configuration
-@ComponentScan  (excludeFilters = {@ComponentScan.Filter(classes = TestHaHa.class) })
+// @ComponentScan  ( basePackages = ("com.zhao.springboot.*") ,excludeFilters = {@ComponentScan.Filter(classes = TestHaHa.class) })
+@ComponentScan(basePackages = ("com.zhao"))
 public class AppConfig {
 
     @Bean(name = "user")
